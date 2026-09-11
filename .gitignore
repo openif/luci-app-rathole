@@ -1,0 +1,7 @@
+.DS_Store
+*.ipk
+*.tar.gz
+*~
+.vscode/
+.idea/
+*.log

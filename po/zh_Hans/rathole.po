@@ -1,0 +1,398 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Rathole"
+msgstr "Rathole 穿透代理"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "Log"
+msgstr "运行日志"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Stopped"
+msgstr "已停止"
+
+msgid "Starting"
+msgstr "正在启动"
+
+msgid "Stopping"
+msgstr "正在停止"
+
+msgid "Restarting"
+msgstr "正在重启"
+
+msgid "Operating"
+msgstr "正在操作"
+
+msgid "Rathole Proxy"
+msgstr "Rathole 代理服务"
+
+msgid "Service %s command issued successfully."
+msgstr "服务 %s 命令已成功下发。"
+
+msgid "Failed to execute command: "
+msgstr "执行命令失败："
+
+msgid "Not Installed"
+msgstr "未安装"
+
+msgid "Rathole Status"
+msgstr "服务状态"
+
+msgid "Status"
+msgstr "运行状态"
+
+msgid "PID"
+msgstr "进程 PID"
+
+msgid "Target Server"
+msgstr "连接目标"
+
+msgid "Active Services"
+msgstr "活动服务"
+
+msgid "active"
+msgstr "个运行中"
+
+msgid "configured"
+msgstr "个已配置"
+
+msgid "Managed by Raw TOML"
+msgstr "由原生 TOML 配置文件管理"
+
+msgid "Core Version"
+msgstr "核心版本"
+
+msgid "(Please install rathole to /usr/bin/rathole)"
+msgstr "（请将 rathole 可执行文件放置于 /usr/bin/rathole）"
+
+msgid "Actions"
+msgstr "快捷操作"
+
+msgid "Start"
+msgstr "启动"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Restart"
+msgstr "重启"
+
+msgid "Export VPS Config"
+msgstr "导出配套 VPS 配置"
+
+msgid "Rathole Reverse Proxy"
+msgstr "Rathole 反向代理"
+
+msgid "A lightweight and high-performance reverse proxy for NAT traversal written in Rust."
+msgstr "基于 Rust 编写的高性能、超低资源占用的 NAT 内网穿透反向代理工具。"
+
+msgid "General Settings"
+msgstr "全局基本设置"
+
+msgid "Enable"
+msgstr "启用服务"
+
+msgid "Operation Mode"
+msgstr "运行模式"
+
+msgid "Choose Client mode for exposing local services to a remote VPS, or Raw mode for custom TOML."
+msgstr "推荐选择客户端模式以将本地服务暴露到公网 VPS；高级用户可选择原生 TOML 模式。"
+
+msgid "Client Mode (Recommended)"
+msgstr "客户端模式（推荐）"
+
+msgid "Raw TOML Configuration (Advanced)"
+msgstr "原生 TOML 配置模式（高级）"
+
+msgid "Binary Path"
+msgstr "核心程序路径"
+
+msgid "Custom path to the rathole executable."
+msgstr "Rathole 核心二进制文件路径，默认为 /usr/bin/rathole。"
+
+msgid "Log Level"
+msgstr "日志等级"
+
+msgid "Log File Path"
+msgstr "日志文件路径"
+
+msgid "Client Connection"
+msgstr "客户端连接设置"
+
+msgid "Remote Server Address"
+msgstr "服务端公网地址"
+
+msgid "Public address and port of your Rathole server (e.g. vps.example.com:2333). Must include the port number."
+msgstr "远端 Rathole 服务的公网 IP/域名与端口（如 vps.example.com:2333）。必须包含端口号。"
+
+msgid "Address must include a port number, e.g. vps.example.com:2333"
+msgstr "服务端地址必须包含端口号，例如 vps.example.com:2333"
+
+msgid "Remote Server Address is required when service is enabled."
+msgstr "启用服务时必须填写服务端公网地址。"
+
+msgid "Default Token"
+msgstr "全局认证 Token"
+
+msgid "Global fallback token for authenticating with the server."
+msgstr "与服务端约定的默认认证密钥（子服务未指定 Token 时默认继承此项）。"
+
+msgid "Heartbeat Interval (s)"
+msgstr "心跳发送间隔 (秒)"
+
+msgid "Heartbeat Timeout (s)"
+msgstr "心跳超时时间 (秒)"
+
+msgid "Retry Interval (s)"
+msgstr "断线重试间隔 (秒)"
+
+msgid "Enable Noise Encryption"
+msgstr "启用 Noise 传输加密"
+
+msgid "Encrypt tunnel communication using Noise Protocol without TLS certificates."
+msgstr "使用 Noise 协议框架对隧道通信进行端到端加密，无需配置复杂的 TLS 证书。"
+
+msgid "Noise Handshake Pattern"
+msgstr "Noise 握手模式"
+
+msgid "Server Public Key"
+msgstr "服务端公钥"
+
+msgid "Base64-encoded Noise public key of the server. You can generate a keypair using the tool below."
+msgstr "服务端的 Base64 编码 Noise 公钥。您可以使用下方的快捷生成器一键生成。"
+
+msgid "Noise Keypair Generator"
+msgstr "Noise 密钥对生成器"
+
+msgid "Quickly generate an X25519 keypair for Noise encryption. Automatically fills in the public key and provides the server private key."
+msgstr "一键生成用于 Noise 加密的 X25519 密钥对。自动为您填入公钥并展示服务端所需配置的私钥。"
+
+msgid "Generate Keypair"
+msgstr "一键生成密钥对"
+
+msgid "Generating Noise Keypair..."
+msgstr "正在生成 Noise 密钥对..."
+
+msgid "Generated a new X25519 keypair for Noise protocol encryption. The Private Key is for your VPS server.toml, and the Public Key is used on this OpenWrt client:"
+msgstr "已成功生成一套全新的 X25519 密钥对。私钥用于 VPS 服务端 server.toml，公钥用于此 OpenWrt 客户端："
+
+msgid "Server Private Key:"
+msgstr "服务端私钥 (Private Key)："
+
+msgid "Server Public Key:"
+msgstr "服务端公钥 (Public Key)："
+
+msgid "Private Key copied to clipboard!"
+msgstr "服务端私钥已复制到剪贴板！"
+
+msgid "Public Key copied to clipboard!"
+msgstr "服务端公钥已复制到剪贴板！"
+
+msgid "Apply Public Key to Client"
+msgstr "一键填入服务端公钥"
+
+msgid "Public Key applied to Client Settings! Remember to configure the Private Key on your server."
+msgstr "公钥已自动填入客户端设置！请务必记得将对应的私钥配置在 VPS 服务端。"
+
+msgid "VPS server.toml Preview & Export"
+msgstr "配套 VPS server.toml 预览与导出"
+
+msgid "Below is the matching configuration for your VPS server.toml. The service names, tokens, and encryption protocols match your OpenWrt client rules:"
+msgstr "以下是为您自动生成的配套 VPS 服务端配置 (server.toml)。服务名称、协议和 Token 与本路由器的客户端规则严格一一对应："
+
+msgid "server.toml configuration copied to clipboard!"
+msgstr "server.toml 配置内容已成功复制到剪贴板！"
+
+msgid "Copy to Clipboard"
+msgstr "一键复制到剪贴板"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Services Mapping"
+msgstr "端口转发服务映射"
+
+msgid "Define local services to expose through Rathole. The entry name must only contain English letters, numbers, hyphens, and underscores."
+msgstr "定义需要暴露的本地服务。规则条目名称仅支持英文字母、数字、下划线或连字符。"
+
+msgid "Add Service"
+msgstr "添加转发服务"
+
+msgid "Type"
+msgstr "协议类型"
+
+msgid "Local Address"
+msgstr "本地内网地址"
+
+msgid "Address and port of the service in LAN (e.g. 127.0.0.1:80 for Web UI, 127.0.0.1:22 for SSH)."
+msgstr "内网中目标服务的地址与端口（如 127.0.0.1:80 用于路由器后台，127.0.0.1:22 用于 SSH）。"
+
+msgid "Specific Token"
+msgstr "独立认证 Token"
+
+msgid "Optional (Inherits default)"
+msgstr "可选（留空则继承全局 Token）"
+
+msgid "No Delay"
+msgstr "TCP 无延迟 (NoDelay)"
+
+msgid "Raw TOML Configuration"
+msgstr "原生 TOML 配置"
+
+msgid "TOML Content"
+msgstr "TOML 配置文本"
+
+msgid "When Operation Mode is set to Raw, this full TOML configuration will be passed directly to Rathole."
+msgstr "当运行模式设为原生模式时，此处的 TOML 配置将完整传递给 Rathole 执行。"
+
+msgid "No log data available."
+msgstr "暂无日志数据。"
+
+msgid "Unable to read log file: "
+msgstr "无法读取日志文件："
+
+msgid "Lines"
+msgstr "行"
+
+msgid "Refresh"
+msgstr "刷新"
+
+msgid "Pause Auto-refresh"
+msgstr "暂停自动刷新"
+
+msgid "Resume Auto-refresh"
+msgstr "恢复自动刷新"
+
+msgid "Log auto-refresh paused."
+msgstr "已暂停日志自动刷新。"
+
+msgid "Log auto-refresh resumed."
+msgstr "已恢复日志自动刷新。"
+
+msgid "Clear Log"
+msgstr "清空日志"
+
+msgid "Are you sure you want to clear the runtime log file?"
+msgstr "确定要清空运行日志文件吗？"
+
+msgid "Log file cleared successfully."
+msgstr "日志文件已成功清空。"
+
+msgid "Failed to clear log: "
+msgstr "清空日志失败："
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Log copied to clipboard!"
+msgstr "日志内容已复制到剪贴板！"
+
+msgid "Download Log"
+msgstr "下载日志"
+
+msgid "Rathole - Runtime Log"
+msgstr "Rathole 运行日志"
+
+msgid "Display:"
+msgstr "显示行数："
+
+msgid "Raw TOML Mode"
+msgstr "原生 TOML 模式"
+
+msgid "Failed to generate key: "
+msgstr "生成密钥失败："
+
+msgid "VPS Port (Optional)"
+msgstr "VPS 映射端口 (可选)"
+
+msgid "Target port on VPS for export / reminder. Does not affect client routing directly."
+msgstr "服务端 VPS 对应开放的公网端口（用于备忘提示及一键导出服务端配置）。"
+
+msgid "Test Connectivity"
+msgstr "连通性测试"
+
+msgid "Testing connectivity to VPS (%s)..."
+msgstr "正在测试与 VPS (%s) 的网络连通性..."
+
+msgid "Network connectivity diagnostic results for target server %s:"
+msgstr "目标服务器 %s 网络连通性诊断结果："
+
+msgid "Ping Latency:"
+msgstr "Ping 延迟："
+
+msgid "Reachable"
+msgstr "连通正常"
+
+msgid "Unreachable (ICMP Timeout / Blocked)"
+msgstr "无法连通 (ICMP 超时或被防火墙拦截)"
+
+msgid "Target Port:"
+msgstr "目标端口："
+
+msgid "Diagnostic Tips:"
+msgstr "排障诊断建议："
+
+msgid "If Ping succeeds but the client fails to connect, please verify whether port %s is permitted in your cloud VPS Security Group / Firewall."
+msgstr "如果 Ping 延迟正常但无法建立连接，请重点核对公网 VPS 云厂商控制台的安全组（防火墙）是否放行了 %s 端口。"
+
+msgid "If using Noise encryption, make sure the matching Private Key is configured on the VPS server.toml."
+msgstr "如启用了 Noise 加密，请确保 VPS 端的 server.toml 正确配置了对应的服务端私钥。"
+
+msgid "Ensure the Rathole server process is actively running on your VPS."
+msgstr "确保 VPS 上的 Rathole 服务端进程正在正常运行中。"
+
+msgid "VPS Connectivity Diagnostics"
+msgstr "VPS 连通性网络诊断"
+
+msgid "Diagnostic failed: "
+msgstr "网络诊断失败："
+
+msgid "Select target deployment format to export matching VPS configurations:"
+msgstr "选择需要导出的 VPS 部署形式："
+
+msgid "Configuration File"
+msgstr "配置文件"
+
+msgid "Container CLI"
+msgstr "容器命令行"
+
+msgid "Container Orchestration"
+msgstr "容器编排"
+
+msgid "Systemd Daemon"
+msgstr "系统守护进程"
+
+msgid "Service name can only contain letters, numbers, hyphens, and underscores."
+msgstr "服务名称只能包含英文字母、数字、短横线与下划线。"
+
+msgid "Remote port %s is already assigned to service \"%s\" with same protocol!"
+msgstr "远程公网端口 %s 已经被同协议的服务 \"%s\" 占用！"
+
+msgid "Config Templates"
+msgstr "配置模板"
+
+msgid "Quickly populate the editor with standard configuration templates."
+msgstr "一键向编辑器中填入标准预置配置模板。"
+
+msgid "Insert Client Template"
+msgstr "载入客户端模板"
+
+msgid "Overwrite current content with Client Template?"
+msgstr "是否确认使用客户端预置模板覆盖当前内容？"
+
+msgid "Filter keywords (e.g. ERROR, router_web)..."
+msgstr "搜索过滤关键词 (如 ERROR, router_web)..."
+
+msgid "No matching log entries found."
+msgstr "未找到匹配的日志条目。"
+
+msgid "Errors"
+msgstr "项错误"
+
+msgid "Warnings"
+msgstr "项警告"

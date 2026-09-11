@@ -1,0 +1,27 @@
+#!/bin/sh
+
+[ -f /etc/config/rathole ] || touch /etc/config/rathole
+
+uci -q get rathole.global >/dev/null || {
+	uci set rathole.global=rathole
+	uci set rathole.global.enabled='0'
+	uci set rathole.global.mode='client'
+	uci set rathole.global.binary_path='/usr/bin/rathole'
+	uci set rathole.global.loglevel='info'
+	uci set rathole.global.logfile='/var/log/rathole.log'
+	uci commit rathole
+}
+
+uci -q get rathole.client >/dev/null || {
+	uci set rathole.client=client
+	uci set rathole.client.remote_addr=''
+	uci set rathole.client.default_token=''
+	uci set rathole.client.heartbeat_timeout='40'
+	uci set rathole.client.retry_interval='1'
+	uci set rathole.client.noise_enable='0'
+	uci set rathole.client.noise_pattern='Noise_NK_25519_ChaChaPoly_BLAKE2s'
+	uci set rathole.client.noise_remote_public_key=''
+	uci commit rathole
+}
+
+exit 0

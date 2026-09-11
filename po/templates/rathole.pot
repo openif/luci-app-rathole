@@ -1,0 +1,399 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Rathole"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid "Log"
+msgstr ""
+
+msgid "Running"
+msgstr ""
+
+msgid "Stopped"
+msgstr ""
+
+msgid "Starting"
+msgstr ""
+
+msgid "Stopping"
+msgstr ""
+
+msgid "Restarting"
+msgstr ""
+
+msgid "Operating"
+msgstr ""
+
+msgid "Rathole Proxy"
+msgstr ""
+
+msgid "Service %s command issued successfully."
+msgstr ""
+
+msgid "Failed to execute command: "
+msgstr ""
+
+msgid "Not Installed"
+msgstr ""
+
+msgid "Rathole Status"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "PID"
+msgstr ""
+
+msgid "Target Server"
+msgstr ""
+
+msgid "Active Services"
+msgstr ""
+
+msgid "active"
+msgstr ""
+
+msgid "configured"
+msgstr ""
+
+msgid "Managed by Raw TOML"
+msgstr ""
+
+msgid "Core Version"
+msgstr ""
+
+msgid "(Please install rathole to /usr/bin/rathole)"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "Restart"
+msgstr ""
+
+msgid "Export VPS Config"
+msgstr ""
+
+msgid "Rathole Reverse Proxy"
+msgstr ""
+
+msgid "A lightweight and high-performance reverse proxy for NAT traversal written in Rust."
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Operation Mode"
+msgstr ""
+
+msgid "Choose Client mode for exposing local services to a remote VPS, or Raw mode for custom TOML."
+msgstr ""
+
+msgid "Client Mode (Recommended)"
+msgstr ""
+
+msgid "Raw TOML Configuration (Advanced)"
+msgstr ""
+
+msgid "Binary Path"
+msgstr ""
+
+msgid "Custom path to the rathole executable."
+msgstr ""
+
+msgid "Log Level"
+msgstr ""
+
+msgid "Log File Path"
+msgstr ""
+
+msgid "Client Connection"
+msgstr ""
+
+msgid "Remote Server Address"
+msgstr ""
+
+msgid "Public address and port of your Rathole server (e.g. vps.example.com:2333). Must include the port number."
+msgstr ""
+
+msgid "Address must include a port number, e.g. vps.example.com:2333"
+msgstr ""
+
+msgid "Remote Server Address is required when service is enabled."
+msgstr ""
+
+msgid "Default Token"
+msgstr ""
+
+msgid "Global fallback token for authenticating with the server."
+msgstr ""
+
+msgid "Heartbeat Interval (s)"
+msgstr ""
+
+msgid "Heartbeat Timeout (s)"
+msgstr ""
+
+msgid "Retry Interval (s)"
+msgstr ""
+
+msgid "Enable Noise Encryption"
+msgstr ""
+
+msgid "Encrypt tunnel communication using Noise Protocol without TLS certificates."
+msgstr ""
+
+msgid "Noise Handshake Pattern"
+msgstr ""
+
+msgid "Server Public Key"
+msgstr ""
+
+msgid "Base64-encoded Noise public key of the server. You can generate a keypair using the tool below."
+msgstr ""
+
+msgid "Noise Keypair Generator"
+msgstr ""
+
+msgid "Quickly generate an X25519 keypair for Noise encryption. Automatically fills in the public key and provides the server private key."
+msgstr ""
+
+msgid "Generate Keypair"
+msgstr ""
+
+msgid "Generating Noise Keypair..."
+msgstr ""
+
+msgid "Generated a new X25519 keypair for Noise protocol encryption. The Private Key is for your VPS server.toml, and the Public Key is used on this OpenWrt client:"
+msgstr ""
+
+msgid "Server Private Key:"
+msgstr ""
+
+msgid "Server Public Key:"
+msgstr ""
+
+msgid "Private Key copied to clipboard!"
+msgstr ""
+
+msgid "Public Key copied to clipboard!"
+msgstr ""
+
+msgid "Apply Public Key to Client"
+msgstr ""
+
+msgid "Public Key applied to Client Settings! Remember to configure the Private Key on your server."
+msgstr ""
+
+msgid "VPS server.toml Preview & Export"
+msgstr ""
+
+msgid "Below is the matching configuration for your VPS server.toml. The service names, tokens, and encryption protocols match your OpenWrt client rules:"
+msgstr ""
+
+msgid "server.toml configuration copied to clipboard!"
+msgstr ""
+
+msgid "Copy to Clipboard"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Services Mapping"
+msgstr ""
+
+msgid "Define local services to expose through Rathole. The entry name must only contain English letters, numbers, hyphens, and underscores."
+msgstr ""
+
+msgid "Add Service"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Local Address"
+msgstr ""
+
+msgid "Address and port of the service in LAN (e.g. 127.0.0.1:80 for Web UI, 127.0.0.1:22 for SSH)."
+msgstr ""
+
+msgid "Specific Token"
+msgstr ""
+
+msgid "Optional (Inherits default)"
+msgstr ""
+
+msgid "No Delay"
+msgstr ""
+
+msgid "Raw TOML Configuration"
+msgstr ""
+
+msgid "TOML Content"
+msgstr ""
+
+msgid "When Operation Mode is set to Raw, this full TOML configuration will be passed directly to Rathole."
+msgstr ""
+
+msgid "No log data available."
+msgstr ""
+
+msgid "Unable to read log file: "
+msgstr ""
+
+msgid "Lines"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Pause Auto-refresh"
+msgstr ""
+
+msgid "Resume Auto-refresh"
+msgstr ""
+
+msgid "Log auto-refresh paused."
+msgstr ""
+
+msgid "Log auto-refresh resumed."
+msgstr ""
+
+msgid "Clear Log"
+msgstr ""
+
+msgid "Are you sure you want to clear the runtime log file?"
+msgstr ""
+
+msgid "Log file cleared successfully."
+msgstr ""
+
+msgid "Failed to clear log: "
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Log copied to clipboard!"
+msgstr ""
+
+msgid "Download Log"
+msgstr ""
+
+msgid "Rathole - Runtime Log"
+msgstr ""
+
+msgid "Display:"
+msgstr ""
+
+msgid "Raw TOML Mode"
+msgstr ""
+
+msgid "Failed to generate key: "
+msgstr ""
+
+msgid "VPS Port (Optional)"
+msgstr ""
+
+msgid "Target port on VPS for export / reminder. Does not affect client routing directly."
+msgstr ""
+
+msgid "Test Connectivity"
+msgstr ""
+
+msgid "Testing connectivity to VPS (%s)..."
+msgstr ""
+
+msgid "Network connectivity diagnostic results for target server %s:"
+msgstr ""
+
+msgid "Ping Latency:"
+msgstr ""
+
+msgid "Reachable"
+msgstr ""
+
+msgid "Unreachable (ICMP Timeout / Blocked)"
+msgstr ""
+
+msgid "Target Port:"
+msgstr ""
+
+msgid "Diagnostic Tips:"
+msgstr ""
+
+msgid "If Ping succeeds but the client fails to connect, please verify whether port %s is permitted in your cloud VPS Security Group / Firewall."
+msgstr ""
+
+msgid "If using Noise encryption, make sure the matching Private Key is configured on the VPS server.toml."
+msgstr ""
+
+msgid "Ensure the Rathole server process is actively running on your VPS."
+msgstr ""
+
+msgid "VPS Connectivity Diagnostics"
+msgstr ""
+
+msgid "Diagnostic failed: "
+msgstr ""
+
+msgid "Select target deployment format to export matching VPS configurations:"
+msgstr ""
+
+msgid "Configuration File"
+msgstr ""
+
+msgid "Container CLI"
+msgstr ""
+
+msgid "Container Orchestration"
+msgstr ""
+
+msgid "Systemd Daemon"
+msgstr ""
+
+msgid "Service name can only contain letters, numbers, hyphens, and underscores."
+msgstr ""
+
+msgid "Remote port %s is already assigned to service \"%s\" with same protocol!"
+msgstr ""
+
+msgid "Config Templates"
+msgstr ""
+
+msgid "Quickly populate the editor with standard configuration templates."
+msgstr ""
+
+msgid "Insert Client Template"
+msgstr ""
+
+msgid "Overwrite current content with Client Template?"
+msgstr ""
+
+msgid "Filter keywords (e.g. ERROR, router_web)..."
+msgstr ""
+
+msgid "No matching log entries found."
+msgstr ""
+
+msgid "Errors"
+msgstr ""
+
+msgid "Warnings"
+msgstr ""
+

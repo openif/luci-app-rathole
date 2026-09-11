@@ -1,0 +1,39 @@
+{
+	"luci-app-rathole": {
+		"description": "Grant access to Rathole configuration and management",
+		"read": {
+			"uci": [ "rathole" ],
+			"ubus": {
+				"service": [ "list" ],
+				"file": [ "read", "stat" ],
+				"luci": [ "setInitAction" ]
+			},
+			"file": {
+				"/var/etc/rathole/*": [ "read" ],
+				"/var/log/rathole.log": [ "read" ],
+				"/tmp/log/rathole.log": [ "read" ],
+				"/var/log/*": [ "read" ],
+				"/tmp/log/*": [ "read" ]
+			}
+		},
+		"write": {
+			"uci": [ "rathole" ],
+			"ubus": {
+				"file": [ "write", "exec" ],
+				"luci": [ "setInitAction" ]
+			},
+			"file": {
+				"/var/etc/rathole/*": [ "write" ],
+				"/var/log/rathole.log": [ "write" ],
+				"/tmp/log/rathole.log": [ "write" ],
+				"/var/log/*": [ "write" ],
+				"/tmp/log/*": [ "write" ],
+				"/usr/bin/rathole *": [ "exec" ],
+				"/usr/local/bin/rathole *": [ "exec" ],
+				"/etc/init.d/rathole *": [ "exec" ],
+				"/bin/ping *": [ "exec" ],
+				"/bin/sh *": [ "exec" ]
+			}
+		}
+	}
+}
